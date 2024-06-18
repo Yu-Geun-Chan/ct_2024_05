@@ -10,22 +10,20 @@ import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 public class Tests {
 
     @Test
-    @DisplayName("[1, 2, 3, 4, 5, 6, 7, 8, 9, 10] => 5.5")
+    @DisplayName("150000 => 142500")
     void t1(){
-        int[] num1 = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-        assertThat(new Solution().solution(num1)).isEqualTo(5.5);
+        assertThat(new Solution().solution(150000)).isEqualTo(142500);
     }
     @Test
-    @DisplayName("[89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99] => 94.0")
+    @DisplayName("580000 => 464000")
     void t2(){
-        int[] num1 = {89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99};
-        assertThat(new Solution().solution(num1)).isEqualTo(94.0);
+        assertThat(new Solution().solution(580000)).isEqualTo(464000);
     }
     @Test
-    @DisplayName("80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90 => 85.0")
+    @DisplayName("300000 => 270000")
     void t3(){
-        int[] num1 = {80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90};
-        assertThat(new Solution().solution(num1)).isEqualTo(85.0);
+        assertThat(new Solution().solution(300000)).isEqualTo(270000);
     }
 }
+
 

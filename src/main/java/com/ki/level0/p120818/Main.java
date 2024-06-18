@@ -5,19 +5,18 @@ public class Main {
 
     }
 }
+
 class Solution {
     public int solution(int price) {
-        int a = int (price);
-        if (a < 100000) {
-            return a;
+        if (price < 100000) {
+            return price;
         }
-        else if (a>= 100000) {
-            return a * 0.95;
+        else if (price >= 100000 && price < 300000) {
+            return (int) (price * 0.95);
         }
-        else if (a < 500000 && a >= 300000) {
-            return a * 0.9;
+        else if (price >= 300000 && price < 500000) {
+            return (int) (price * 0.9);
         }
-        return a * 0.85;
+        return (int) (price * 0.8);
     }
-
 }
