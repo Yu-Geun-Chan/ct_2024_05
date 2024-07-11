@@ -7,9 +7,17 @@ public class Main {
 }
 
 class Solution {
-    public int solution(int number, int n, int m) {
-        if (number % n == 0 && number % m == 0) {
-            return 1;
-        } else return 0;
+    public String solution(String my_string) {
+        String answer = "";
+        for (int i = 0; i < my_string.length(); i++) {
+            char c = my_string.charAt(i);
+            if (c >= 'a' && c <= 'z') {
+                c = (char) (c - 32);
+            } else {
+                c = (char) (c + 32);
+            }
+            answer = answer + c;
+        }
+        return answer;
     }
 }
