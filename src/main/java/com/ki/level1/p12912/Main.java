@@ -28,5 +28,6 @@ class Solution {
             sum2 = sum2 + b;
             return sum2;
         } else return a;
+
     }
 }
