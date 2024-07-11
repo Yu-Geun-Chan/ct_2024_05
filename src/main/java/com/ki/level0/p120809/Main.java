@@ -5,7 +5,6 @@ public class Main {
 
     }
 }
-
 class Solution {
     public int[] solution(int[] numbers) {
         int[] answer = new int[numbers.length];
